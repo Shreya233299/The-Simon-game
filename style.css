@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}  
+body{
+    background-image: url(decorative-background-with-smoke.jpg);
+    background-size: 100vh 100vw;
+}  
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:white;
+    font-family: 'Original Surfer', cursive;
+    text-shadow: 6px 6px 10px rgba(255, 255, 255, 0.8);
+    font-size: 3rem
+}
+.outerCircle{
+    margin-top: 20px;
+    background: #385a94;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 8px 8px 15px 5px #888888;
+}
+.top-left{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    background: darkgreen;
+    -moz-border-radius: 250px 0 0 0;
+    -webkit-border-radius: 250px 0 0 0;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+
+}
+.top-right{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    -moz-border-radius: 0 250px 0 0;
+    -webkit-border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+  
+}
+.bottom-left{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    -moz-border-radius: 0 0 0 250px;
+    -webkit-border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 50%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+
+
+}
+.bottom-right{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    -moz-border-radius: 0 0 250px 0;
+    -webkit-border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.innerCircle{
+    position: absolute;
+    background: grey;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    font-size: 2em;
+    font-family: 'Original Surfer', cursive;
+    position: absolute;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+.button {
+    position: relative;
+    border-radius: 50%;
+    font-family: 'Original Surfer', cursive;
+    font-size: 1.5em;
+    background-color: green;
+    padding: 8px;
+    border: 3px solid black;
+    margin: 6px;
+    top: 11px;
+}
+#turn {
+  position: absolute;
+  background: #330000;
+  color: red;
+  font-family: courier;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-top: 150px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.text2 {
+    position: absolute;
+    font-family: 'Original Surfer', cursive;
+    margin-top: 90px;
+  }
+.text1{
+    position: absolute;
+    font-family: 'Original Surfer', cursive;
+    top: 100px;
+  }
+  
+.text1 span:last-child {
+    padding-left: 92px;
+  }
+.switches{
+    position: relative;
+    left: -71px;
+    top: -10px;
+}
+.toggle{
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+#checkbx1 {
+    background-color: red;
+}
+#checkbx2 {
+    background-color: yellow;
+    position: relative;
+    left: 137px;
+}
+.toggle::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.toggle:checked::after {
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 2.5px;
+    height: 5.5px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
